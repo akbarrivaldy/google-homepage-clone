@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#Navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#Navbar a {
+  color: #000000;
+  text-decoration: none;
+}
+#Navbar a:hover {
+  text-decoration: underline;
+}
+#Navbar .menu__container {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+#Navbar .menu__container:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+#Navbar .menu__container i {
+  font-size: 1.2rem;
+  color: #000000;
+}
+#Navbar .profile__container {
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+}
+#Navbar .profile__container:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+#Navbar .profile__container img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+#Content {
+  height: 100vh;
+  justify-content: start;
+}
+#Content .content__logo {
+  width: 100%;
+  text-align: center;
+  height: 250px;
+  overflow: hidden;
+}
+#Content .content__logo img {
+  width: 70%;
+}
+#Content .border_radius__typing {
+  border-radius: 20px !important;
+}
+#Content .content__search {
+  border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+#Content .content__search i {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.1);
+}
+#Content .content__search hr {
+  color: rgba(0, 0, 0, 0.1);
+  height: 2px;
+}
+#Content .content__search .content__searchbar {
+  flex-grow: 1;
+}
+#Content .content__search .content__searchbar input {
+  width: 100%;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+#Content .content__search .content__mic {
+  cursor: pointer;
+}
+#Content .content__search .content__mic i {
+  color: #000000;
+}
+#Content .content__search .content__results {
+  cursor: pointer;
+}
+#Content .content__search .content__results:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+#Content .content__search .content__results p {
+  flex-grow: 1;
+  overflow: hidden;
+}
+#Content .content__logoContainer {
+  margin-top: 40px;
+}
+#Content .content__searchContainer {
+  position: relative;
+}
+#Content .content__searchContainer #SearchBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background: #fff;
+}
+#Content .content__buttonContainer {
+  position: relative;
+  margin-top: 80px;
+}
+#Content .content__buttonContainer div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+@media screen and (min-width: 992px) {
+  #Content .content__logo {
+    height: 250px !important;
+  }
+  #Content .content__logo img {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #Content .content__logo {
+    height: 220px !important;
+  }
+  #Content .content__logo img {
+    width: 420px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #Content .content__logoContainer {
+    margin-top: 80px;
+  }
+  #Content .content__logo {
+    height: 150px !important;
+  }
+  #Content .content__logo img {
+    max-width: 260px;
+  }
+}
+@media screen and (max-width: 575px) {
+  #Content {
+    padding: 0 10px;
+  }
+  #Content .content__logo {
+    height: 120px !important;
+  }
+  #Content .content__logo img {
+    max-width: 200px;
+  }
+  #Content .content__searchbar input {
+    padding: 0 !important;
+  }
+  #Content .content__results p {
+    padding: 0 !important;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
